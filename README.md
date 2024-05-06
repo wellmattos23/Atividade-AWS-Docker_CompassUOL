@@ -148,15 +148,15 @@ versionamento;
 * Salve o arquivo que será gerado em um local seguro;
 * Pronto, o par de chaves está criado e será listada em “Pares de Chaves”.
 
-## Modelo de Execução Instância EC2 
+## Modelo de Execução Instância EC2
 
-* No painel EC2, criaremos um modelo de execução de instância; 
+* No painel EC2, criaremos um modelo de execução de instância;
 * Defina um nome ao modelo e uma descrição;
 * A AMI usada será “Amazon Linux AMI 2023”;
 * Tipo de instância: t3.small
 * Em seguida selecione a key par criada anteriormente;
 * Selecione o grupo de segurança criando anteriormente para a instância EC2;
-* Insira as tags necessárias; 
+* Insira as tags necessárias;
 * Em “detalhes avançados”, no campo “user data” faremos a inserção do shell script abaixo;
 * Verifique todas as informações e em seguida cliquem em “criar modelo de execução”
 
@@ -204,6 +204,8 @@ sudo yum install libxcrypt-compat -y
 docker-compose -f /mnt/efs/docker-compose.yaml up -d
 ```
 
+### Descrição do script
+
 * Update da instância;
 * Instalção do docker e inicialização;
 * Instalação do docker compose;
@@ -212,7 +214,6 @@ docker-compose -f /mnt/efs/docker-compose.yaml up -d
 * Montagem do sistema de aqruivos e atribuição ao "fstab";
 * Criação da pasta "wordpress" dentro do ponto de montagem;
 * Criação do docker-compose.yaml para deploy do Wordpress e inicialização do container.
-
 
 ## Auto Scaling Groups
 
@@ -227,3 +228,9 @@ docker-compose -f /mnt/efs/docker-compose.yaml up -d
 * Em “tamanho do grupo” e em “escalabilidade”, colocaremos 2;
 * Em “Política de manutenção de instâncias”, selecionaremos a opção “priorizar disponibilidade”;
 * Revise todas as informações e clique em “criar grupo de auto scaling”
+
+## Instalação do Wordpress
+
+* Copie o DNS do Loado Balancer e abra-o no se navegador de internet;
+* Em seguida, seremos direcionados para a página de instalação do Wordpress;
+* É só inserir nossas informações e prosseguir com a instalação.
