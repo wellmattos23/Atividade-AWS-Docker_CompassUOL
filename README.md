@@ -59,17 +59,56 @@ versionamento;
 
 * No painel EC2, faremos a criação dos grupos de segurança;
 * No menu lateral esquerdo iremos até a opção “Secutity groups”, em seguida “Criar grupo de segurança”;
+* Criaremos os seguintes grupos: 
 
 ### SG_EC2
 
 | TIPO      | PROTOCOLO  |  PORTAS  |
-| :-------: | :--------: | -------: |
+| :-------: | :--------: | :------: |
 | SSH       | TCP        | 22       |
 | HTTP      | TCP        | 80       |
 
 ### SG_LOAD_BALANCER
 
 | TIPO      | PROTOCOLO  |  PORTAS  |
-| :-------: | :--------: | -------: |
+| :-------: | :--------: | :------: |
 | HTTP      | TCP        | 80       |
 
+### SG_ENDPOINT
+
+| TIPO      | PROTOCOLO  |  PORTAS  |
+| :-------: | :--------: | :------: |
+| SSH       | TCP        | 22       |
+
+### SG_RDS
+
+| TIPO      | PROTOCOLO  |  PORTAS  |
+| :-------: | :--------: | :------: |
+| MySql     | TCP        | 3306     |
+
+### SG_EFS
+
+| TIPO      | PROTOCOLO  |  PORTAS  |
+| :-------: | :--------: | :------: |
+| NFS       | TCP        | 2049     |
+
+## Endpoints
+
+* No console da AWS, em Painel de VPC iremos criar um Endpoints;
+* Defina um nome para o endpoints;
+* Em “Categoria de serviço”, selecione “Endponts do EC2 Instance Connect”;
+* Em seguida seleciona a VPC criada anteriormente e logo abaixo o security group criado para o endpoint;
+* Por fim, selecione uma sub-rede privada pertencente a VPC criada anteriormente;
+* Clique em “criar endpoint”.
+
+## EFS – Elasctic File System
+
+* No painel EFS, faremos a criação criaremos um sistema de arquivos;
+* Defina um nome;
+* Em VPC selecionaremos a VPC criada anteriormente;
+* Em seguida, personalizar;
+* Tipo do sistema de arquivos: regional
+* Mantenha as demais configurações por padrão e clique em próximo;
+* Em seguida clique em próximo novamente;
+* Novamente clique em próximo;
+* Revise todas as informações e clique em “criar”.
