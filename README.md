@@ -44,6 +44,8 @@ versionamento;
 
 ## Criação da VPC
 
+![vpc](https://github.com/wellmattos23/Atividade-AWS-Docker_CompassUOL/blob/8d415f484696269a4a362e2e3d0a6b98b50cd8f7/Img/Screenshot_1.png)
+
 * No console da AWS, em Painel de VPC iremos criar uma nova VPC.
 * Com o painel aberto, realizaremos a seguinte configuração:
 * VPC e mais
@@ -116,6 +118,8 @@ versionamento;
 
 ## RDS – MySQL
 
+![rds](https://github.com/wellmattos23/Atividade-AWS-Docker_CompassUOL/blob/8d415f484696269a4a362e2e3d0a6b98b50cd8f7/Img/Screenshot_2.png)
+
 * No painel Amazon RDS, criaremos um banco de dados relacional;
 * Em “Opções de mecanismos” escolheremos a opção “MySQL”;
 * Em “Modelos”, utilizaremos o nível gratuito;
@@ -131,11 +135,16 @@ versionamento;
 * Vá até a opção “Load Balancers”, no painel lateral esquerdo;
 * Em seguida clique em “Criar load balancer”;
 * Usaremos o “Classic Load Balancer”;
+
+![classc_load_balancer](https://github.com/wellmattos23/Atividade-AWS-Docker_CompassUOL/blob/8d415f484696269a4a362e2e3d0a6b98b50cd8f7/Img/Screenshot_8.png)
+
 * Defina um nome para o load balancer;
 * Mantenha-o voltado para a internet;
 * Em “Mapeamento de rede”, selecione a VPC criada anteriormente e em seguida selecione as duas sub-redes públicas da VPC;
 * Em “Grupo de segurança”, escolha o grupo de segurança criado para o load balancer anteriormente;
 * Verifique todas as informações e clique em “Criar load balancer”.
+
+![load_balancer](https://github.com/wellmattos23/Atividade-AWS-Docker_CompassUOL/blob/8d415f484696269a4a362e2e3d0a6b98b50cd8f7/Img/Screenshot_14.png)
 
 ## Chave Pública
 
@@ -234,3 +243,20 @@ docker-compose -f /mnt/efs/docker-compose.yaml up -d
 * Copie o DNS do Loado Balancer e abra-o no se navegador de internet;
 * Em seguida, seremos direcionados para a página de instalação do Wordpress;
 * É só inserir nossas informações e prosseguir com a instalação.
+
+![wordpress](https://github.com/wellmattos23/Atividade-AWS-Docker_CompassUOL/blob/8d415f484696269a4a362e2e3d0a6b98b50cd8f7/Img/Screenshot_15.png)
+
+## REFERÊNCIAS
+
+<https://blog.4linux.com.br/docker-compose-explicado/>
+<https://hub.docker.com/_/wordpress>
+<https://www.diegobrocanelli.com.br/mysql/comandos-basicos-mysql-no-terminal/>
+<https://docs.aws.amazon.com/pt_br/AmazonRDS/latest/UserGuide/USER_ConnectToInstance.html>
+<https://docs.aws.amazon.com/pt_br/elasticloadbalancing/latest/classic/introduction.html>
+<https://docs.aws.amazon.com/pt_br/general/latest/gr/rande.html>
+<https://docs.aws.amazon.com/pt_br/AmazonRDS/latest/UserGuide/Welcome.html>
+<https://docs.aws.amazon.com/pt_br/autoscaling/>
+
+### Atividade desenvolvida e documentada por Wellygnton Chaves de Matos, proposta pelo Programa de Bolsas Compass UOL AWS e DevSecOps/2024.
+
+![compassuol](https://github.com/wellmattos23/Atividade-AWS-Docker_CompassUOL/blob/8d415f484696269a4a362e2e3d0a6b98b50cd8f7/Img/Screenshot_19.png)
