@@ -61,13 +61,15 @@ versionamento;
 * No menu lateral esquerdo iremos até a opção “Secutity groups”, em seguida “Criar grupo de segurança”;
 
 ### SG_EC2
-| :-------: | :--------: | -------: |
+
 | TIPO      | PROTOCOLO  |  PORTAS  |
+| :-------: | :--------: | -------: |
 | SSH       | TCP        | 22       |
 | HTTP      | TCP        | 80       |
 
 ### SG_LOAD_BALANCER
-| :-------: | :--------: | -------: |
+
 | TIPO      | PROTOCOLO  |  PORTAS  |
+| :-------: | :--------: | -------: |
 | HTTP      | TCP        | 80       |
 
