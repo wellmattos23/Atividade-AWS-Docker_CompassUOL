@@ -1,4 +1,4 @@
-# <center>ATIVIDADE-AWS-DOCKER<center>
+# <center>ATIVIDADE-AWS-DOCKER</center>
 
 ## REQUISITOS
 
