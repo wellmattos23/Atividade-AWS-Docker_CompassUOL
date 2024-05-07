@@ -1,4 +1,4 @@
-# <center>ATIVIDADE-AWS-DOCKER</center>
+<h1 align="center">ATIVIDADE-AWS-DOCKER</h1>
 
 ## REQUISITOS
 
@@ -98,7 +98,7 @@ versionamento;
 
 * No console da AWS, em Painel de VPC iremos criar um Endpoints;
 * Defina um nome para o endpoints;
-* Em “Categoria de serviço”, selecione “Endponts do EC2 Instance Connect”;
+* Em “Categoria de serviço”, selecione “Endpoints do EC2 Instance Connect”;
 * Em seguida seleciona a VPC criada anteriormente e logo abaixo o security group criado para o endpoint;
 * Por fim, selecione uma sub-rede privada pertencente a VPC criada anteriormente;
 * Clique em “criar endpoint”.
@@ -131,7 +131,7 @@ versionamento;
 
 ## Load Balancer
 
-* No painel EC2, criaremos um Load Balancers;
+* No painel EC2, criaremos um Load Balancer;
 * Vá até a opção “Load Balancers”, no painel lateral esquerdo;
 * Em seguida clique em “Criar load balancer”;
 * Usaremos o “Classic Load Balancer”;
@@ -240,7 +240,7 @@ docker-compose -f /mnt/efs/docker-compose.yaml up -d
 
 ## Instalação do Wordpress
 
-* Copie o DNS do Loado Balancer e abra-o no se navegador de internet;
+* Copie o DNS do Loado Balancer e abra-o no seu navegador de internet;
 * Em seguida, seremos direcionados para a página de instalação do Wordpress;
 * É só inserir nossas informações e prosseguir com a instalação.
 
