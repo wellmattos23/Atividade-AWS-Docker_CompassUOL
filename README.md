@@ -1,4 +1,4 @@
-# ATIVIDADE-AWS-DOCKER
+# <center>ATIVIDADE-AWS-DOCKER<center>
 
 ## REQUISITOS
 
@@ -257,6 +257,6 @@ docker-compose -f /mnt/efs/docker-compose.yaml up -d
 <https://docs.aws.amazon.com/pt_br/AmazonRDS/latest/UserGuide/Welcome.html>
 <https://docs.aws.amazon.com/pt_br/autoscaling/>
 
-### Atividade desenvolvida e documentada por Wellygnton Chaves de Matos, proposta pelo Programa de Bolsas Compass UOL AWS e DevSecOps/2024.
+### Atividade desenvolvida e documentada por Wellygnton Chaves de Matos, proposta pelo Programa de Bolsas Compass UOL AWS e DevSecOps/2024
 
 ![compassuol](https://github.com/wellmattos23/Atividade-AWS-Docker_CompassUOL/blob/8d415f484696269a4a362e2e3d0a6b98b50cd8f7/Img/Screenshot_19.png)
